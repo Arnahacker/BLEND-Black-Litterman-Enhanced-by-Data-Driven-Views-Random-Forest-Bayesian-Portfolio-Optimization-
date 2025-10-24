@@ -1,18 +1,6 @@
 # Black-Litterman Portfolio Optimization with Random Forest Views
 
-# Here's a breakdown of the steps:
-#
-# 1.  **Data Loading and Preprocessing**: Load historical industry returns, clean them, and prepare them for time series analysis.
-# 2.  **Feature Engineering**: Create technical features (momentum, volatility, skewness, kurtosis) from historical returns.
-# 3.  **Random Forest for Views**: Train a Random Forest Regressor for each asset to predict its next-month return. These predictions serve as our "views."
-# 4.  **Confidence Calculation**: Estimate the confidence in each Random Forest prediction based on its out-of-sample Mean Squared Error (MSE).
-# 5.  **Black-Litterman Model**: Integrate the historical market equilibrium returns (prior) with the Random Forest-derived views and their confidences. This yields a more informed set of expected returns (posterior).
-# 6.  **Portfolio Optimization**: Use the Black-Litterman adjusted expected returns and the historical covariance matrix to find the portfolio with the maximum Sharpe ratio.
-# 7.  **Rolling Window Backtesting**: Simulate the strategy's performance over time by iteratively performing steps 2-6 in a rolling window fashion.
-# 8.  **Performance Evaluation**: Calculate and visualize the portfolio's weights, expected performance metrics, and actual out-of-sample returns.
-#
 
-# ---
 # ## 1. Importing Libraries and Initial Setup
 import pandas as pd
 import numpy as np
