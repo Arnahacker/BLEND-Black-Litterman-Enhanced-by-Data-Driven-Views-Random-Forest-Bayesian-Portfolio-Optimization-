@@ -1,4 +1,4 @@
-# 🧠 BLEND: Black-Litterman Enhanced by Data-Driven Views
+#  BLEND: Black-Litterman Enhanced by Data-Driven Views
 
 **Author:** Arnav Chhabra  
 **Description:**  
@@ -7,14 +7,14 @@ By using **Random Forest regressors** to generate dynamic “views” on asset r
 
 ---
 
-## 🚀 Overview
+## Overview
 
 The **Black-Litterman model** traditionally blends investor views with market equilibrium returns to produce improved expected returns.  
 In this implementation, the “investor views” are **learned automatically** through machine learning models (Random Forests) trained on engineered features from historical data.
 
 ---
 
-## 🔍 Methodology
+##  Methodology
 
 ### 1. **Data Loading and Preprocessing**
 - Input: Monthly industry returns (`ind30_m_vw_rets.csv`)
@@ -64,12 +64,3 @@ Generates four time-series features from past returns:
   - Portfolio weights over time
   - Sharpe ratio trajectory
   - Out-of-sample portfolio returns
-
----
-
-## ⚙️ Installation
-
-### Prerequisites
-Ensure the following libraries are installed:
-```bash
-pip install numpy pandas matplotlib scikit-learn PyPortfolioOpt cvxpy
